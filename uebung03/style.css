@@ -1,0 +1,23 @@
+.cell{
+    padding: 5px;
+    text-align: center;
+}
+
+.btn{
+    margin: 2px;
+    width: 100%;
+}
+
+#timerbox{
+    margin: auto;
+}
+
+#time{
+    font-size: 40px;
+    font-family: monospace
+}
+
+#titleBox{
+    text-align: center;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="text1">Lorem Ipsum</p>
+    <button id="btn1">Text verändern</button>
+    <br>
+
+    <p id="text2">Lorem Ipsum</p>
+    <button id="btn2">Hintergrund verändern</button>
+    <br>
+
+    <p id="text3">Lorem Ipsum</p>
+    <button id="btn3">Zufälliger Hintergrund</button>
+    <br>
+
+    <p id="text4">Lorem Ipsum</p>
+    <button id="btn4">Oldstyle Animation</button>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>$(document).ready(function(){
+        $("#btn1").on("click", function(){$("#text1").html("Dieser Text wurde manipuliert!")});
+        $("#btn2").on("click", function(){$("#text2").css("background", "blue");});
+        $("#btn3").on("click", function(){$("#text3").css("background", "rgb("+getRandomByte()+","+getRandomByte()+","+getRandomByte()+")");});
+        $("#btn4").on("click", function(){console.log($("#text4").fadeTo("slow", 0))});
+    });
+    function getRandomByte() {
+        return Math.floor(Math.random() * 256);
+    }
+    </script>
+</body>
+</html>

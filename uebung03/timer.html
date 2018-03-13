@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Übung03</title>
+    <link type="text/css" rel="stylesheet" href="style.css" >
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+  
+</head>
+<body>
+    <div class="container">
+        <div class="container-fluid">
+        <div id="titleBox"><h1>Übung 03 - Timer</h1></div>
+        <div class="row">
+            <div class="col-sm-4 cell" id="UpDownMinuteDiv">
+                <div id="UpMinuteDiv">
+                    <button id="btnUpMinutes" class="btn btn-scondary">up</button>
+                </div>
+                <div id="DownMinuteDiv">
+                    <button id="btnDownMinutes" class="btn btn-scondary">down</button>
+                </div>
+            </div>
+            <div class="col-sm-4 cell" id="timerbox">
+                <div class="timeBox">
+                    <p id="time">
+                        <span id="timeMinute">00</span>:<span id="timeSecond">00</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 cell" id="UpDownSecondDiv">
+                <div id="UpSecondDiv">
+                    <button id="btnUpSeconds" class="btn btn-scondary">up</button>
+                </div>
+                <div id="DownSecondDiv">
+                    <button id="btnDownSeconds" class="btn btn-scondary">down</button>
+                </div>
+            </div>
+        
+            <div class="col-sm-4 cell" id="StartDiv">
+                <button id="btnStart" class="btn btn-success">start</button>
+            </div>
+            <div class="col-sm-4 cell cell">
+                <button id="btnStop" class="btn btn-warning">stop</button>
+            </div>
+            <div class="col-sm-4 cell cell">
+                <button id="btnReset" class="btn btn-danger">reset</button>
+        </div>
+            </div>
+    </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+    <script src="script.js"></script>
+</body>
+</html>
